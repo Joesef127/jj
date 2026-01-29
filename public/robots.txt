@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Disallow admin and checkout pages
+Disallow: /admin/
+Disallow: /checkout/
+Disallow: /cart/
+Disallow: /account/
+
+# Disallow API routes
+Disallow: /api/
+
+# Allow crawling of images
+Allow: /images/
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.webp$
+
+# Sitemap location
+Sitemap: https://jjclothing.com/sitemap.xml
