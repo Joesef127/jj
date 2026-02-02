@@ -1,57 +1,54 @@
 "use client";
 
+import BackgroundGradients from "@/components/cms/BackgroundGradients";
+import TopDecorativeBar from "@/components/cms/TopDecorativeBar";
+import ComingSoonHeader from "@/components/cms/ComingSoonHeader";
+import HeroBadge from "@/components/cms/HeroBadge";
+import HeroHeadline from "@/components/cms/HeroHeadline";
+import FeatureGrid from "@/components/cms/FeatureGrid";
+import CTASection from "@/components/cms/CTASection";
+import ComingSoonFooter from "@/components/cms/ComingSoonFooter";
+import FloatingCards from "@/components/cms/FloatingCards";
 import AnimatedBackgroundPattern from "@/components/cms2/AnimatedBackgroundPattern";
-import DecorativeBlobs from "@/components/cms2/DecorativeBlobs";
-import HeroImageSection from "@/components/cms2/HeroImageSection";
-import LogoSection from "@/components/cms2/LogoSection";
-import LaunchBadge from "@/components/cms2/LaunchBadge";
-import MainHeadline from "@/components/cms2/MainHeadline";
-import Description from "@/components/cms2/Description";
-import FeaturePills from "@/components/cms2/FeaturePills";
-import CTAButton from "@/components/cms2/CTAButton";
-import StatsCards from "@/components/cms2/StatsCards";
-import Footer from "@/components/cms2/Footer";
 
 export default function ComingSoon() {
   return (
-    <main className="min-h-screen relative overflow-hidden bg-gradient-to-br from-[rgb(var(--color-light))] via-[rgb(var(--color-surface))] to-[rgb(var(--color-light))]">
-      {/* Animated Background Pattern */}
+    <main className="min-h-screen relative overflow-hidden bg-[rgb(var(--color-light))]">
+      {/* Mega Background Gradient Orbs */}
+      <BackgroundGradients />
       <AnimatedBackgroundPattern />
 
-      {/* Decorative Blobs */}
-      <DecorativeBlobs />
+      {/* Top Decorative Bar */}
+      <TopDecorativeBar />
 
-      {/* Hero Image Section - Left Side */}
-      <HeroImageSection />
+      {/* Main Container */}
+      <div className="relative z-10 container-custom min-h-screen flex flex-col">
+        {/* Header */}
+        <ComingSoonHeader />
 
-      {/* Main Content - Right Side */}
-      <div className="relative z-10 min-h-screen flex flex-col items-center lg:justify-self-end lg:w-3/5">
-        <div className="w-full px-6 sm:px-12 lg:px-16 pt-10 pb-6">
-          {/* Logo */}
-          <LogoSection />
+        {/* Hero Section */}
+        <div className="flex-1 flex items-center justify-center">
+          <div className="w-full max-w-5xl mx-auto">
+            {/* Badge */}
+            <HeroBadge />
 
-          {/* Badge with Icon */}
-          <LaunchBadge />
+            {/* Main Headline */}
+            <HeroHeadline />
 
-          {/* Headline with Dynamic Typography */}
-          <MainHeadline />
+            {/* Feature Grid */}
+            <FeatureGrid />
 
-          {/* Description */}
-          <Description />
-
-          {/* Feature Pills */}
-          <FeaturePills />
-
-          {/* CTA Section */}
-          <CTAButton />
-
-          {/* Decorative Cards */}
-          <StatsCards />
+            {/* CTA Section */}
+            <CTASection />
+          </div>
         </div>
 
         {/* Footer */}
-        <Footer />
+        <ComingSoonFooter />
       </div>
+
+      {/* Floating Product Cards (Decorative) */}
+      <FloatingCards />
     </main>
   );
 }

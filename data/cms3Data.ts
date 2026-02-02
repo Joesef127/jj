@@ -7,10 +7,10 @@ export const cms3Data = {
   description:
     "Our new ecommerce platform is on its way. Be the first to know when we launch by following our instagram for updates below.",
   social: {
-    title: "Follow Our Journey",
+    title: "Follow Our Stories On Instagram",
     instagramUrl: "https://www.instagram.com/jandjicon",
   },
   footer: {
-    copyright: "© 2026 JJ Clothing. All rights reserved.",
+    copyright: "© 2026 J&J Clothing. All rights reserved.",
   },
 };

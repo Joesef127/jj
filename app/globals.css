@@ -2,7 +2,7 @@
 
 @layer base {
   :root {
-    /* Brand Colors - Extracted from JJ Logo */
+    /* Brand Colors - Extracted from J&J Logo */
     --color-primary: 122 158 62; /* Olive/Moss Green #7A9E3E */
     --color-primary-light: 197 217 61; /* Lime/Yellow-Green #C5D93D */
     --color-dark: 0 0 0; /* Black #000000 */
@@ -305,5 +305,32 @@
 
   .animate-float-slow {
     animation: float-slow 6s ease-in-out infinite;
+  }
+
+  /* 3D Spin animation for logo */
+  @keyframes spin3d {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+
+  .logo-3d-container {
+    perspective: 1000px;
+    display: inline-block;
+  }
+
+  .animate-spin-3d {
+    animation: spin3d 4s linear infinite;
+    transform-style: preserve-3d;
+    display: inline-block;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15))
+            drop-shadow(0 0 0 rgba(122, 158, 62, 0.2));
+  }
+
+  .animate-spin-3d img {
+    backface-visibility: visible;
   }
 }

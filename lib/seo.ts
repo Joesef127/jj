@@ -23,8 +23,8 @@ export function generateMetadata({
   canonicalUrl,
 }: SEOProps = {}): Metadata {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://jjclothing.com';
-  const fullTitle = title ? `${title} | JJ Clothing` : 'JJ Clothing';
-  const fullDescription = description || 'Discover stylish and affordable clothing at JJ Clothing.';
+  const fullTitle = title ? `${title} | J&J Clothing` : 'J&J Clothing';
+  const fullDescription = description || 'Discover stylish and affordable clothing at J&J Clothing.';
 
   return {
     title: fullTitle,
@@ -35,7 +35,7 @@ export function generateMetadata({
       title: fullTitle,
       description: fullDescription,
       url: canonicalUrl || siteUrl,
-      siteName: 'JJ Clothing',
+      siteName: 'J&J Clothing',
       images: [
         {
           url: image,
@@ -85,7 +85,7 @@ export interface OrganizationSchema {
 }
 
 export function generateOrganizationSchema({
-  name = 'JJ Clothing',
+  name = 'J&J Clothing',
   url = 'https://jjclothing.com',
   logo = '/logo-color.png',
   sameAs = [
@@ -161,7 +161,7 @@ export function generateWebsiteSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'JJ Clothing',
+    name: 'J&J Clothing',
     url: siteUrl,
     potentialAction: {
       '@type': 'SearchAction',

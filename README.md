@@ -1,6 +1,6 @@
-# JJ Clothing Ecommerce - Next.js Frontend
+# J&J Clothing Ecommerce - Next.js Frontend
 
-A modern, fully-featured ecommerce platform for JJ Clothing built with Next.js 15, TypeScript, and Tailwind CSS.
+A modern, fully-featured ecommerce platform for J&J Clothing built with Next.js 15, TypeScript, and Tailwind CSS.
 
 ## Tech Stack
 
@@ -129,7 +129,7 @@ This project is optimized for deployment on Vercel:
 
 ## License
 
-Proprietary - JJ Clothing
+Proprietary - J&J Clothing
 
 ## Support
 

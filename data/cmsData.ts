@@ -33,6 +33,6 @@ export const cmsData = {
     instagramUrl: "https://www.instagram.com/jandjicon",
   },
   footer: {
-    copyright: "© 2026 JJ Clothing. All rights reserved. | Crafted with care",
+    copyright: "© 2026 J&J Clothing. All rights reserved. | Crafted with care",
   },
 };

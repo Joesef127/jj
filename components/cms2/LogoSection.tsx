@@ -5,7 +5,7 @@ export default function LogoSection() {
     <div className="mb-8 animate-fade-in">
       <Image
         src="/jj_green_logo.png"
-        alt="JJ Clothing"
+        alt="J&J Clothing"
         width={160}
         height={80}
         priority

@@ -1,54 +1,42 @@
-"use client";
+'use client';
 
-import BackgroundGradients from "@/components/cms/BackgroundGradients";
-import TopDecorativeBar from "@/components/cms/TopDecorativeBar";
-import ComingSoonHeader from "@/components/cms/ComingSoonHeader";
-import HeroBadge from "@/components/cms/HeroBadge";
-import HeroHeadline from "@/components/cms/HeroHeadline";
-import FeatureGrid from "@/components/cms/FeatureGrid";
-import CTASection from "@/components/cms/CTASection";
-import ComingSoonFooter from "@/components/cms/ComingSoonFooter";
-import FloatingCards from "@/components/cms/FloatingCards";
+import BackgroundElements from "@/components/cms3/BackgroundElements";
+import Logo from "@/components/cms3/Logo";
+import Badge from "@/components/cms3/Badge";
+import Headline from "@/components/cms3/Headline";
+import DescriptionText from "@/components/cms3/DescriptionText";
+import SocialLinks from "@/components/cms3/SocialLinks";
+import FooterText from "@/components/cms3/FooterText";
 import AnimatedBackgroundPattern from "@/components/cms2/AnimatedBackgroundPattern";
 
 export default function ComingSoon() {
   return (
-    <main className="min-h-screen relative overflow-hidden bg-[rgb(var(--color-light))]">
-      {/* Mega Background Gradient Orbs */}
-      <BackgroundGradients />
+    <main className="min-h-screen relative overflow-hidden bg-[rgb(var(--color-background))]">
+      {/* Decorative Background Elements */}
+      <BackgroundElements />
       <AnimatedBackgroundPattern />
 
-      {/* Top Decorative Bar */}
-      <TopDecorativeBar />
+      {/* Main Content */}
+      <div className="relative z-10 container-custom min-h-screen flex flex-col items-center justify-center py-12 px-4">
+        
+        {/* Logo */}
+        <Logo />
 
-      {/* Main Container */}
-      <div className="relative z-10 container-custom min-h-screen flex flex-col">
-        {/* Header */}
-        <ComingSoonHeader />
+        {/* Badge */}
+        <Badge />
 
-        {/* Hero Section */}
-        <div className="flex-1 flex items-center justify-center">
-          <div className="w-full max-w-5xl mx-auto">
-            {/* Badge */}
-            <HeroBadge />
+        {/* Headline */}
+        <Headline />
 
-            {/* Main Headline */}
-            <HeroHeadline />
+        {/* Description */}
+        <DescriptionText />
 
-            {/* Feature Grid */}
-            <FeatureGrid />
-
-            {/* CTA Section */}
-            <CTASection />
-          </div>
-        </div>
+        {/* Social Links */}
+        <SocialLinks />
 
         {/* Footer */}
-        <ComingSoonFooter />
+        <FooterText />
       </div>
-
-      {/* Floating Product Cards (Decorative) */}
-      <FloatingCards />
     </main>
   );
 }

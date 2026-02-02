@@ -42,6 +42,6 @@ export const cms2Data = {
     },
   ],
   footer: {
-    copyright: "© 2026 JJ Clothing. All rights reserved.",
+    copyright: "© 2026 J&J Clothing. All rights reserved.",
   },
 };

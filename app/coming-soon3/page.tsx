@@ -1,41 +1,56 @@
-'use client';
+"use client";
 
-import BackgroundElements from "@/components/cms3/BackgroundElements";
-import Logo from "@/components/cms3/Logo";
-import Badge from "@/components/cms3/Badge";
-import Headline from "@/components/cms3/Headline";
-import DescriptionText from "@/components/cms3/DescriptionText";
-import SocialLinks from "@/components/cms3/SocialLinks";
-import FooterText from "@/components/cms3/FooterText";
 import AnimatedBackgroundPattern from "@/components/cms2/AnimatedBackgroundPattern";
+import DecorativeBlobs from "@/components/cms2/DecorativeBlobs";
+import HeroImageSection from "@/components/cms2/HeroImageSection";
+import LogoSection from "@/components/cms2/LogoSection";
+import LaunchBadge from "@/components/cms2/LaunchBadge";
+import MainHeadline from "@/components/cms2/MainHeadline";
+import Description from "@/components/cms2/Description";
+import FeaturePills from "@/components/cms2/FeaturePills";
+import CTAButton from "@/components/cms2/CTAButton";
+import StatsCards from "@/components/cms2/StatsCards";
+import Footer from "@/components/cms2/Footer";
 
 export default function ComingSoon() {
   return (
-    <main className="min-h-screen relative overflow-hidden bg-[rgb(var(--color-background))]">
-      {/* Decorative Background Elements */}
-      <BackgroundElements />
+    <main className="min-h-screen relative overflow-hidden bg-gradient-to-br from-[rgb(var(--color-light))] via-[rgb(var(--color-surface))] to-[rgb(var(--color-light))]">
+      {/* Animated Background Pattern */}
       <AnimatedBackgroundPattern />
 
-      {/* Main Content */}
-      <div className="relative z-10 container-custom min-h-screen flex flex-col items-center justify-center py-12 px-4">
-        
-        {/* Logo */}
-        <Logo />
+      {/* Decorative Blobs */}
+      <DecorativeBlobs />
 
-        {/* Badge */}
-        <Badge />
+      {/* Hero Image Section - Left Side */}
+      <HeroImageSection />
 
-        {/* Headline */}
-        <Headline />
+      {/* Main Content - Right Side */}
+      <div className="relative z-10 min-h-screen flex flex-col items-center lg:justify-self-end lg:w-3/5">
+        <div className="w-full px-6 sm:px-12 lg:px-16 pt-10 pb-6">
+          {/* Logo */}
+          <LogoSection />
 
-        {/* Description */}
-        <DescriptionText />
+          {/* Badge with Icon */}
+          <LaunchBadge />
 
-        {/* Social Links */}
-        <SocialLinks />
+          {/* Headline with Dynamic Typography */}
+          <MainHeadline />
+
+          {/* Description */}
+          <Description />
+
+          {/* Feature Pills */}
+          <FeaturePills />
+
+          {/* CTA Section */}
+          <CTAButton />
+
+          {/* Decorative Cards */}
+          <StatsCards />
+        </div>
 
         {/* Footer */}
-        <FooterText />
+        <Footer />
       </div>
     </main>
   );

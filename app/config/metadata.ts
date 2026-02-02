@@ -1,8 +1,8 @@
 import type { Metadata, Viewport } from 'next';
 
 export const siteConfig = {
-  name: 'JJ Clothing',
-  description: 'Discover stylish and affordable clothing at JJ Clothing. Shop the latest trends in men\'s, women\'s, and kids\' fashion. Quality apparel for every occasion.',
+  name: 'J&J Clothing',
+  description: 'Discover stylish and affordable clothing at J&J Clothing. Shop the latest trends in men\'s, women\'s, and kids\' fashion. Quality apparel for every occasion.',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://jjclothing.com',
   ogImage: '/og-image.jpg',
   links: {
@@ -22,7 +22,7 @@ export const siteConfig = {
     'style',
     'trendy fashion',
     'affordable clothing',
-    'JJ Clothing'
+    'J&J Clothing'
   ],
 };
 
@@ -47,12 +47,12 @@ export const metadata: Metadata = {
   keywords: siteConfig.keywords,
   authors: [
     {
-      name: 'JJ Clothing',
+      name: 'J&J Clothing',
       url: siteConfig.url,
     },
   ],
-  creator: 'JJ Clothing',
-  publisher: 'JJ Clothing',
+  creator: 'J&J Clothing',
+  publisher: 'J&J Clothing',
   formatDetection: {
     email: false,
     address: false,

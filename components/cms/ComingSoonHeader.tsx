@@ -6,7 +6,7 @@ export default function ComingSoonHeader() {
     <header className="py-6 flex items-center justify-between animate-fade-in">
       <Image
         src="/jj_green_logo.png"
-        alt="JJ Clothing"
+        alt="J&J Clothing"
         width={140}
         height={70}
         priority
