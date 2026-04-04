@@ -6,9 +6,8 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://jjclothing.com',
   ogImage: '/og-image.jpg',
   links: {
-    twitter: 'https://twitter.com/jjclothing',
-    instagram: 'https://instagram.com/jjclothing',
-    facebook: 'https://facebook.com/jjclothing',
+    twitter: "https://x.com/jandjicon",
+    instagram: "https://www.instagram.com/jandjicon",
   },
   keywords: [
     'clothing',
@@ -79,7 +78,7 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
-    creator: '@jjclothing',
+    creator: '@jandjicon',
   },
   icons: {
     icon: [
