@@ -23,9 +23,10 @@ export const cms2Data = {
   ],
   cta: {
     title: "Stay Connected",
-    description: "Be the first to know when we launch. Follow us on Instagram for exclusive updates, sneak peeks, and special offers.",
+    description: "Be the first to know when we launch. Follow us on social media for exclusive updates, sneak peeks, and special offers.",
     buttonText: "Follow @jandjicon",
     instagramUrl: "https://www.instagram.com/jandjicon",
+    twitterUrl: "https://x.com/jandjicon",
   },
   stats: [
     {

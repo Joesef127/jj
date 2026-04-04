@@ -28,9 +28,10 @@ export const cmsData = {
   },
   cta: {
     title: "Join The Wait List",
-    description: "Follow us on Instagram for exclusive updates, behind-the-scenes content, and be first to shop when we launch",
+    description: "Follow us on social media for exclusive updates, behind-the-scenes content, and be first to shop when we launch",
     buttonText: "Follow @jandjicon",
     instagramUrl: "https://www.instagram.com/jandjicon",
+    twitterUrl: "https://x.com/jandjicon",
   },
   footer: {
     copyright: "© 2026 J&J Clothing. All rights reserved. | Crafted with care",
