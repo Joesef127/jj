@@ -1,5 +1,7 @@
 import { Instagram, Twitter } from "lucide-react";
 import { cms3Data } from "@/data/cms3Data";
+import Image from "next/image";
+import { icon } from "@/lib";
 
 export default function SocialLinks() {
   return (
@@ -17,7 +19,7 @@ export default function SocialLinks() {
         >
           <Instagram className="w-5 h-5" />
         </a>
-        
+
         <a
           href={cms3Data.social.twitterUrl}
           target="_blank"
@@ -25,7 +27,11 @@ export default function SocialLinks() {
           className="w-12 h-12 rounded-full bg-[rgb(var(--color-surface))] hover:bg-[rgb(var(--color-primary))] text-[rgb(var(--color-text-primary))] hover:text-[rgb(var(--color-light))] flex items-center justify-center transition-all hover:scale-110 hover:shadow-lg border border-[rgb(var(--color-border))] hover:border-transparent"
           aria-label="Follow us on Twitter"
         >
-          <Twitter className="w-5 h-5" />
+          <Image
+            src={icon.x_twitter}
+            alt="X Twitter Icon"
+            className="w-6 h-6 group-hover:rotate-12 transition-transform hover:invert"
+          />
         </a>
       </div>
     </div>

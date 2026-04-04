@@ -1,5 +1,7 @@
 import { Instagram, ArrowRight, Twitter } from "lucide-react";
 import { cmsData } from "@/data/cmsData";
+import Image from "next/image";
+import { icon } from "@/lib";
 
 export default function CTASection() {
   return (
@@ -33,7 +35,11 @@ export default function CTASection() {
         </button>
 
         <button className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-[rgb(var(--color-primary))] to-[rgb(var(--color-primary-light))] hover:from-[rgb(var(--color-action-primary-hover))] hover:to-[rgb(var(--color-action-secondary-hover))] text-[rgb(var(--color-light))] px-6 py-2.5 sm:px-8 sm:py-4 rounded-full shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(122,158,62,0.5)] transition-all hover:scale-105 overflow-hidden">
-          <Twitter className="w-6 h-6 group-hover:rotate-12 transition-transform" />
+          <Image
+            src={icon.x_twitter}
+            alt="X Twitter Icon"
+            className="w-6 h-6 group-hover:rotate-12 transition-transform invert"
+          />
 
           <a
             href={cmsData.cta.twitterUrl}
